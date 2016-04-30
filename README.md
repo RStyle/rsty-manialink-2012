@@ -9,8 +9,8 @@ Very special is the fact that you have to register your Manialink at http://offi
 ### How to code one?
 You have to learn a lot because Nadeo, the developers of TM United, created a new markup language. Basically you are coding in XML but to use the full potential of Manialinks you have to use a language like PHP to e.g. get the nickname of the player visiting your Manialink or to create an admin panel where you can upload new maps to your Manialink. Of course MySql will help you with that.
 Documentation:
-English http://wiki.maniaplanet.com/en/Manialinks
-German http://www.mania-community.de/showthread.php?1482-ManiaPlanet-ManiaLinks
+<br>English http://wiki.maniaplanet.com/en/Manialinks
+<br>German http://www.mania-community.de/showthread.php?1482-ManiaPlanet-ManiaLinks
 
 ### Some Notes
 The main page is rsty22.php and not index.php. Don't ask me why, I will clean this mess up later.
