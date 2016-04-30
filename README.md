@@ -21,7 +21,7 @@ Sharing my own maps, skins, avatars, signs, horns, mods and images
 The first chat with Smileys (managed by PHP)  
 Link page on which visitors can fill in missing Manialinks  
 Multiuser Adminpanel - admins can easily delete/edit user comments or upload new stuff  
-statistics - how many people visited, on which day, for how long and from country do they come  
+Statistics - how many people visited, on which day, for how long and from which country do they come  
 Rating system for downloadable content (1-5 stars)  
 Multiple languages system
 
