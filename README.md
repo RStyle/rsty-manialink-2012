@@ -13,8 +13,7 @@ English http://wiki.maniaplanet.com/en/Manialinks
 German http://www.mania-community.de/showthread.php?1482-ManiaPlanet-ManiaLinks
 
 ### Some notes
-The main page is rsty22.php and not index.php. Don't ask me why, I will clean this mess up later.
-Back in 2012 I didn't write comments, had a bad coding style (readability is very poor) or to sum it up: I was a bad programmer who only cared if my code worked.
+At the moment I can not recommend you to read through my code except index.php which I cleaned up to my latest coding style. All other files are without any (useful) comments and have a very bad coding style (readability is just poor). Don't ask me why, I will clean this mess up later.
 
 ### Nice features I created  
 Sharing my own maps, skins, avatars, signs, horns, mods and images  
