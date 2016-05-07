@@ -47,7 +47,7 @@ if($_GET['plugin']=="jukebox"){
 	$pos=-8;
 	$old_pos=$pos;
 	echo'
-	<label posn="'.(45.9-0).' '.(0-5.4).' 4" halign="center" style="TextCardInfoSmall" text="'.ltrim($_SESSION["jukebox"][$la]).'" />
+	<label posn="'.(45.9-0).' '.(0-5.4).' 16" halign="center" style="TextCardInfoSmall" text="'.ltrim($_SESSION["jukebox"][$la]).'" />
 	';
 	while($datei = readdir($verzeichnis)){
 		if(preg_match("/\.ogg$/", $datei) || preg_match("/\.mux$/", $datei) || preg_match("/\.wav$/", $datei)) {
@@ -64,7 +64,7 @@ if($_GET['plugin']=="jukebox"){
 				if($_GET['date']!=""){echo 'date='.$_GET["date"].'&amp;';}
 			if($_GET['id']!=""){echo 'id='.$_GET["id"].'&amp;';}
 			if($_GET['write']!=""){echo 'write='.$_GET["write"].'&amp;';}
-			echo'musik='.$name.'&amp;plugin=jukebox" text="'; if($datei == $_SESSION['musik'])echo'$o$fff'; echo $name.'" sizen="14 3" posn="'.(45.4-14+$sop).' '.$pos.' 4" style="TextRaceStaticSmall" />
+			echo'musik='.$name.'&amp;plugin=jukebox" text="'; if($datei == $_SESSION['musik'])echo'$o$fff'; echo $name.'" sizen="14 3" posn="'.(45.4-14+$sop).' '.$pos.' 16" style="TextRaceStaticSmall" />
 			';
 			//'.(45.9-14).' '.($p-2.1).'
 			$pos-=2.1;
@@ -88,8 +88,8 @@ if($_GET["page"]=="home" or $_GET["page"]==""){
 	if($_GET['id']!=""){echo 'id='.$_GET["id"].'&amp;';}
 	if($_GET['write']!=""){echo 'write='.$_GET["write"].'&amp;';}
 	echo'plugin=jukebox" posn="47 -24.4 6.11" halign="center" valign="center" sizen="12 8" image="./style2/music1.png" imagefocus="./style2/music2.png" />
-	<label textcolor="000" posn="54 -24.4 6.11" valign="center" text="'.ltrim($_SESSION["jukebox"][$la]).'" />
-	<label textcolor="000" posn="41 -24.4 6.11" valign="center" halign="right" text="'.ltrim($_SESSION["jukebox"][$la]).'" />
+	<label textcolor="000" posn="54 -24.4 16" valign="center" text="'.ltrim($_SESSION["jukebox"][$la]).'" />
+	<label textcolor="000" posn="41 -24.4 16" valign="center" halign="right" text="'.ltrim($_SESSION["jukebox"][$la]).'" />
 	';
 }
 ?>
