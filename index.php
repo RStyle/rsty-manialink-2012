@@ -244,6 +244,8 @@ echo'
      <timeout>0</timeout>
 	 <quad posn="0 0 -10" halign="center" valign="center" sizen="128 96" bgcolor="000F" />
 ';
+
+/*
 if (!file_exists('head.txt') or isset($_GET["head"])) {
 	$b="";
 	for($p=-62.5;$p<65;$p+=rand(1,14)/10+3.3) {
@@ -265,10 +267,12 @@ if (!file_exists('head.txt') or isset($_GET["head"])) {
 			echo'
 			<quad posn="'.$info[1].' '.$info[2].' '.$info[3].'" halign="center" sizen="10 12" image="'.$info[0].'" />
 			';
-			//some nice images, not available at github
+			// some nice images, not available at github
 		}
 	}
 }
+*/
+
 //settings_start
 function sett($a="") {
 	global $mysqli, $pdo;

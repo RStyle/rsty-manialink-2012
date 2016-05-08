@@ -1,7 +1,7 @@
 Options -Indexes
 
 <IfModule mod_deflate.c>
- <FilesMatch "\.(jpg|jpeg|gif|png)$">
+ <FilesMatch "\.(jpg|jpeg|gif|png|ogg|mp3)$">
   ExpiresActive on
   ExpiresDefault "access plus 1 month"
   SetOutputFilter DEFLATE
