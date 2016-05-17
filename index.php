@@ -103,12 +103,15 @@ function verlink($a="",$b="",$c="") {
 
 $arrays1=array("&","'","<",">",'"',"Ä","Ö","Ü","ä","ö","ü","ß");
 $arrays2=array("&amp;","&apos;","&lt;","&gt;","&quot;","&#196;","&#214;","&#220;","&#228;","&#246;","&#252;","&#223;");
-//if (isset($_GET["syntax"]))include("syntaxparser.php");
- $ip=$_SERVER['REMOTE_ADDR'];
- $iptxt="./rsty/ip/".$ip.".txt";
- $imageurl="./style2/"; //$ml="r2r";
- $iub="./style2/new/";
- $ml="$000RSty";
+// if (isset($_GET["syntax"]))include("syntaxparser.php");
+// This line was used to test the manialink with the library syntaxparser
+// created by konte. I removed the library from my github repository.
+// http://forum.deepsilver.com/forum/showthread.php/48951-XML-Syntaxparser-%96-Beta
+$ip=$_SERVER['REMOTE_ADDR'];
+$iptxt="./rsty/ip/".$ip.".txt";
+$imageurl="./style2/";
+$iub="./style2/new/";
+$ml="$000RSty";
  
  if (!empty($_SESSION["nickname"])) {
 	 $_SESSION["nickname"]=str_replace($arrays1,$arrays2,$_SESSION['nickname']);
@@ -117,14 +120,14 @@ $arrays2=array("&amp;","&apos;","&lt;","&gt;","&quot;","&#196;","&#214;","&#220;
 	 $array1=array("&amp;amp;","&amp;apos;","&amp;lt;","&amp;gt;","&amp;quot;","&amp;#196;","&amp;#214;","&amp;#220;","&amp;#228;","&amp;#246;","&amp;#252;","&amp;#223;","&amp;#196;","&amp;#214;","&amp;#220;","&amp;#228;","&amp;#246;","&amp;#252;");
 	 $_SESSION["nickname"]=str_replace($array1,$myxml2,$_SESSION["nickname"]); 
 	 $_SESSION["username"]=str_replace($array1,$myxml2,$_SESSION["username"]); 
-	 //\&apos;
+	 // \&apos;
 	 $_SESSION["nickname"]=str_replace('\&apos;','&apos;',$_SESSION["nickname"]);
 	 $_SESSION["nickname"]=str_replace('\&quot;','&quot;',$_SESSION["nickname"]);
  }
  
 if ($_GET['path'] != "")
 	$_SESSION['path'] = $_GET['path'];
- //ip-data
+//ip-data
 if (file_exists($iptxt) && $_SESSION["nickname"]=="" && $_SESSION["username"]=="") {
 	$dataip=file($iptxt);
 	$_SESSION["username"]=str_replace("\n","",trim($dataip[0]));
